@@ -73,12 +73,8 @@ POST /products
       "name": "Zapatilla de running para mujer",
       "price": 12999,
       "description": "Zapatillas cómodas con buena amortiguación",
-      "image": "https://example.com/zapatilla.jpg"
+      "stock": 25
     }
-
-PUT /products/:id
-  - Actualiza un producto existente
-  - BODY igual al POST
 
 DELETE /products/:id
   - Elimina un producto por ID
@@ -86,7 +82,7 @@ DELETE /products/:id
 TODOS LOS ENDPOINTS EXCEPTO LOGIN requieren JWT en los encabezados.
 
 ---------------------------------------------
-CÓDIGOS DE ERROR COMUNES
+CÓDIGOS DE ERROR 
 ---------------------------------------------
 
 401 Unauthorized  →  Token faltante o inválido
@@ -105,15 +101,15 @@ Cada documento debe tener los siguientes campos:
 - name: string
 - price: number
 - description: string
-- image: string (URL)
+- stock
 
 Ejemplo de valores:
-  name: "Zapatilla de running para mujer"
+  name: Zapatilla de running para mujer
   price: 12999
-  description: "Zapatillas cómodas con buena amortiguación"
-  image: "https://example.com/zapatilla.jpg"
+  description: Zapatillas cómodas con buena amortiguación
+  stock: 10
 
-(Se deben colocar con comillas en la consola de Firebase)
+
 
 ---------------------------------------------
 USO CON POSTMAN

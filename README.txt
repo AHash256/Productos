@@ -33,7 +33,7 @@ CONFIGURACIÓN INICIAL
 
 3. Ejecuta
 
-npm npm run start
+npm run start
 
 ---------------------------------------------
 AUTENTICACIÓN

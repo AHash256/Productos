@@ -17,7 +17,7 @@ CONFIGURACIÓN INICIAL
 
 1. Cloná el proyecto:
 
-   git clone 
+   git clone https://github.com/AHash256/Productos.git
    cd productos-api
    npm install
 
